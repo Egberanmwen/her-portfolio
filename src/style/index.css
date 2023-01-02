@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+  }
+:root{
+      --primary-color: #6c63ff;
+      --secondary-color: #f5f2fe;
+      --box-shadow: 0 5px 10px rgba(0,0,0.0.3);
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;   
+} 
+.background{
+      background-color: #eaeaea; 
+}
+#headerContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90rem; 
+    align-items: center;
+    margin: 0 auto; 
+    padding: 20px 16px;
+}
+ul{
+    padding: 0;
+}
+li{
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+#hamburger{
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+.content{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 5rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.introText{
+    flex-basis: 40;
+}
+.imageDiv{
+    flex-basis:55%;
+}
+.personalImage{
+    width: 400px; 
+    position: relative; 
+    left: 10rem;  
+    border-radius: 5px;
+}
+.morePar{
+    margin-top: 2rem;
+}
+#moreBtn,.projectBtn{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--bs-purple);
+    margin-bottom: 2rem;
+    background-color: var(--bs-purple);
+    color: #fff;
+    text-decoration: none;
+}
+.projectBtn:hover{
+    color: var(--bs-info);
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+}
+.paddingBtn{
+    padding-left: 7rem;
+    margin-top: 2rem;
+}
+.rowDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-right: 7rem; 
+    margin-left: 7rem;
+}
+.parDiv{
+    width: 100%;
+}
+#role,#bio,#progress{
+    font-size: 20px;
+}
+#progress{
+    color: #555;
+    font-weight: 700;
+}
+.projectDescription{
+    width: 100%;
+    color: #666;
+}
+.projectImage{
+    border-radius: 25px;
+    width: 100%;  
+}
+.paddingOne{
+    padding: 1rem;
+}
+#collaboHeading{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px; 
+}
+.collaboText{
+    color: #555;
+    font-size: 20px;
+}
+.fontFamily{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#showcase{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#contactLink{
+    color: #555;
+    text-decoration: none;
+    
+}
+.footerDiv{
+    padding: 20px;    
+}
+/* form style */
+.innerDiv{
+    width: 100%;
+}
+.collaboDiv{
+    position: relative;
+    top: 4rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+input,textarea{
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--bs-purple);
+    outline: none;
+  }
+.inputDiv label{
+    margin-right: 12rem;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+}
+.formBtn{
+    position: relative; 
+    top: 1rem; 
+}
+@media all and (max-width: 786px) {
+    #headerContainer{
+        flex-direction: column;
+        align-items: flex-start;   
+    }
+   
+    nav{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .open{
+    
+        height: 210px;
+    }
+    li{
+        display: block;
+        text-align: center;
+        padding: 0.7rem 0;
+    }
+    li a{
+        font-size: 1rem;
+    }
+    #hamburger{
+        display: block;
+    }
+    .parDiv{
+        position: relative;
+    }
+    input,textarea{
+        width: 100%;
+        min-width: 280px;
+    }
+    #messageLebl{  
+        padding-left: 2rem;
+    }    
+}
